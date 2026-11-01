@@ -4,7 +4,7 @@ This source was restored from the user's checksum-verified delivery. The new rev
 
 Use Node 20+ and the pinned pnpm 9.12.0 (`packageManager`). The included `.npmrc` hoisted layout is required by Expo/NativeWind. Run `pnpm install --frozen-lockfile`, `pnpm check`, `pnpm lint`, and `pnpm test`. Do not run database migrations or original production release scripts for this preview. In the managed cloud, `bash ../scripts/setup-cloud.sh` installs the tested tools without changing system directories; Expo settings use `__UNSAFE_EXPO_HOME_DIRECTORY=/tmp/perform-expo` and telemetry is disabled.
 
-For web development run `pnpm exec expo start --web --port 8081`. This serves the UI; authenticated PHP calls need a PHP host or synthetic fixture. On Windows, use that explicit command instead of the old POSIX dev script. HostGator serves static files and PHP, with no Node process required. The permanent OpenAI key belongs only in `perform-ai-private/coaching.php`, outside public_html.
+For web development run `pnpm dev:metro`. This cross-platform command primes NativeWind CSS before starting Expo on port 8081. It serves the UI; authenticated PHP calls need a PHP host or synthetic fixture. HostGator serves static files and PHP, with no Node process required. The permanent OpenAI key belongs only in `perform-ai-private/coaching.php`, outside public_html.
 
 Build the isolated public review with `bash scripts/build_macgyver_review.sh` (Bash/cloud). It creates `../releases/perform-ai-macgyver-preview-flat.zip`, intended only for the proposed `public_html/perform-macgyver-review/` folder after review/approval. The web build explicitly clears the old managed API URL. Never upload the entire source or review bundle to public_html.
 

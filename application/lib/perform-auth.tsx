@@ -41,7 +41,7 @@ function phpEndpoint(path: string): string {
 function imageUrl(path: string | null): string | null {
   if (!path) return null;
   if (/^https?:\/\//.test(path)) return path;
-  if (Platform.OS === "web") return path;
+  if (Platform.OS === "web") return performEndpoint(path);
   return `https://performai.co.uk/app/${path}`;
 }
 

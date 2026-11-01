@@ -46,7 +46,7 @@ Do not extract the review bundle into public_html. First review the source, scre
 
 Before an approved upload, export each browser's existing guest history and take a fresh cPanel backup of the relevant public folder, hidden routing files and private config/data separately. Store private backups outside public_html. The retained original delivery ZIP is evidence, not a current live-server backup.
 
-The nested public archive perform-ai-macgyver-preview-flat.zip is built ONLY for public_html/perform-macgyver-review/. Confirm that folder is unused. Create it with 755 permissions, upload the flat ZIP inside it and extract there. It contains index.html and app/ directly: no additional perform-macgyver-review folder. The proposed entry URL is https://performai.co.uk/perform-macgyver-review/ (not published yet).
+The nested public archive perform-ai-macgyver-preview-flat.zip is built ONLY for public_html/perform-macgyver-review/. Confirm that folder is unused. Create it with 755 permissions, upload the flat ZIP inside it and extract there. It contains index.html and app/ directly: no additional perform-macgyver-review folder. Physical entry directories for known app routes avoid the existing root .htaccess fallback intercepting deep-link refreshes; the original routing file is not edited. The proposed entry URL is https://performai.co.uk/perform-macgyver-review/ (not published yet).
 
 Keep coaching.php and coaching-users.php outside public_html at 600; do not overwrite or resubmit them. The existing test usernames/passwords can sign in to this review through the server-side adapter. Do not share the generated users file or secrets in chat. No hosting upgrade is needed.
 

@@ -21,6 +21,10 @@ manifest=(root/'hostgator/manifest.webmanifest').read_text().replace('/app/',bas
 shutil.copyfile(root/'assets/images/guardian.png',app/'macgyver-guardian.png')
 if 'data-perform-ai-shell' not in html.read_text():
  subprocess.run(['node',str(root/'scripts/inject_perform_ai_web_shell.mjs'),str(html)],env={**os.environ,'EXPO_PUBLIC_PERFORM_BASE_PATH':base},check=True)
+# Existing main-site rewrite rules preserve real directories but catch unknown
+# paths before child rules. Route entry directories avoid modifying that site.
+for route in ['login','register','files','train','scores','profile','script/new','rehearse','results','payments','practice-questions','audience-simulation','admin-subscriptions','dev/theme-lab','oauth/callback']:
+ entry=app/route/'index.html';entry.parent.mkdir(parents=True,exist_ok=True);entry.write_bytes(html.read_bytes())
 (app/'.htaccess').write_text('''Options -Indexes
 DirectoryIndex index.html
 <IfModule mod_rewrite.c>
