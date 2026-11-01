@@ -1,6 +1,10 @@
 [
   {
-    "file": "README.md",
+    "file": "FEATURE-COMPLETION.md",
+    "status": "changed"
+  },
+  {
+    "file": "FINAL-DELIVERY-MANIFEST.md",
     "status": "changed"
   },
   {
@@ -8,11 +12,7 @@
     "status": "changed"
   },
   {
-    "file": "FEATURE-COMPLETION.md",
-    "status": "changed"
-  },
-  {
-    "file": "FINAL-DELIVERY-MANIFEST.md",
+    "file": "README.md",
     "status": "changed"
   },
   {
@@ -28,79 +28,7 @@
     "status": "changed"
   },
   {
-    "file": "tests/environment-override.test.ts",
-    "status": "added"
-  },
-  {
-    "file": "tests/auth.logout.test.ts",
-    "status": "changed"
-  },
-  {
-    "file": "tests/service-worker.test.ts",
-    "status": "changed"
-  },
-  {
-    "file": "tests/account-storage.test.ts",
-    "status": "added"
-  },
-  {
-    "file": "scripts/load-env.js",
-    "status": "changed"
-  },
-  {
-    "file": "scripts/test_macgyver_built.py",
-    "status": "added"
-  },
-  {
-    "file": "scripts/build_macgyver_review.sh",
-    "status": "added"
-  },
-  {
-    "file": "scripts/test_macgyver_php.py",
-    "status": "added"
-  },
-  {
-    "file": "scripts/inject_perform_ai_web_shell.mjs",
-    "status": "changed"
-  },
-  {
-    "file": "scripts/test_macgyver_browser.cjs",
-    "status": "added"
-  },
-  {
-    "file": "scripts/test_macgyver_built.cjs",
-    "status": "added"
-  },
-  {
-    "file": "scripts/prepare_macgyver_review.py",
-    "status": "added"
-  },
-  {
     "file": "components/macgyver-bridge.tsx",
-    "status": "added"
-  },
-  {
-    "file": "hostgator/service-worker.js",
-    "status": "changed"
-  },
-  {
-    "file": "hostgator/account-auth.php",
-    "status": "changed"
-  },
-  {
-    "file": "hostgator/transcription-provider.php",
-    "status": "added"
-  },
-  {
-    "file": "hostgator/macgyver.php",
-    "status": "added"
-  },
-  {
-    "file": "hostgator/assistant-store.php",
-    "status": "added"
-  },
-  {
-    "file": "hostgator/transcribe.php",
     "status": "added"
   },
   {
@@ -108,11 +36,31 @@
     "status": "changed"
   },
   {
+    "file": "hostgator/account-auth.php",
+    "status": "changed"
+  },
+  {
+    "file": "hostgator/assistant-store.php",
+    "status": "added"
+  },
+  {
     "file": "hostgator/macgyver-provider.php",
     "status": "added"
   },
   {
-    "file": "lib/hosting.ts",
+    "file": "hostgator/macgyver.php",
+    "status": "added"
+  },
+  {
+    "file": "hostgator/service-worker.js",
+    "status": "changed"
+  },
+  {
+    "file": "hostgator/transcribe.php",
+    "status": "added"
+  },
+  {
+    "file": "hostgator/transcription-provider.php",
     "status": "added"
   },
   {
@@ -124,23 +72,87 @@
     "status": "changed"
   },
   {
-    "file": "lib/php-transcription.ts",
-    "status": "added"
-  },
-  {
     "file": "lib/document-import.web.ts",
     "status": "changed"
+  },
+  {
+    "file": "lib/hosting.ts",
+    "status": "added"
   },
   {
     "file": "lib/perform-auth.tsx",
     "status": "changed"
   },
   {
+    "file": "lib/php-transcription.ts",
+    "status": "added"
+  },
+  {
+    "file": "package.json",
+    "status": "changed"
+  },
+  {
+    "file": "public/macgyver-guardian.png",
+    "status": "added"
+  },
+  {
     "file": "public/macgyver-widget.js",
     "status": "added"
   },
   {
+    "file": "scripts/build_macgyver_review.sh",
+    "status": "added"
+  },
+  {
+    "file": "scripts/inject_perform_ai_web_shell.mjs",
+    "status": "changed"
+  },
+  {
+    "file": "scripts/load-env.js",
+    "status": "changed"
+  },
+  {
+    "file": "scripts/prepare_macgyver_review.py",
+    "status": "added"
+  },
+  {
+    "file": "scripts/prime-css.cjs",
+    "status": "added"
+  },
+  {
+    "file": "scripts/test_macgyver_browser.cjs",
+    "status": "added"
+  },
+  {
+    "file": "scripts/test_macgyver_built.cjs",
+    "status": "added"
+  },
+  {
+    "file": "scripts/test_macgyver_built.py",
+    "status": "added"
+  },
+  {
+    "file": "scripts/test_macgyver_php.py",
+    "status": "added"
+  },
+  {
     "file": "server/import/extract.ts",
+    "status": "changed"
+  },
+  {
+    "file": "tests/account-storage.test.ts",
+    "status": "added"
+  },
+  {
+    "file": "tests/auth.logout.test.ts",
+    "status": "changed"
+  },
+  {
+    "file": "tests/environment-override.test.ts",
+    "status": "added"
+  },
+  {
+    "file": "tests/service-worker.test.ts",
     "status": "changed"
   }
 ]
