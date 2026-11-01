@@ -12,6 +12,7 @@ files=subprocess.check_output(['git','ls-files','-z'],cwd=root).decode().split('
 with zipfile.ZipFile(source,'w') as archive:
  for name in sorted(filter(None,files)):
   parts=Path(name).parts
+  if parts and parts[0]=='downloads':continue # Published review snapshots are not source inputs.
   if any(part in ['node_modules','review-build','.expo','.manus','.git'] or part.startswith('.env') for part in parts):raise RuntimeError('Unexpected tracked local/private data: '+name)
   if Path(name).name in ['accounts.php','coaching.php','coaching-users.php']:raise RuntimeError('Private config must not be packaged.')
   path=root/name
