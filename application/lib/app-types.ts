@@ -1,0 +1,21 @@
+export type RehearsalMode = "full" | "first-letter" | "keywords" | "blind" | "progressive" | "presentation" | "speaker-notes";
+export type ThemeName = "alpha-omega" | "black-blue" | "black-gold" | "matrix" | "white" | "blue";
+export type SourceFormat = "text" | "txt" | "pdf" | "docx" | "pptx";
+export type ScriptSlide = { id: string; number: number; title: string; text: string; speakerNotes: string };
+export type ScriptDocument = { id: string; title: string; content: string; createdAt: string; updatedAt: string; targetSeconds: number; sourceFormat?: SourceFormat; sourceFilename?: string; extractionWarnings?: string[]; slides?: ScriptSlide[] };
+export type AlignmentStatus = "correct" | "missing" | "additional" | "substitution";
+export type WordAlignment = { expected?: string; spoken?: string; status: AlignmentStatus; expectedIndex?: number; spokenIndex?: number };
+export type FillerOccurrence = { phrase: string; count: number };
+export type SectionResult = { sectionIndex: number; sectionLabel: string; accuracyPercent?: number; retries: number; revealed: boolean; weak: boolean };
+export type AnalysisStatus = "not-recorded" | "pending" | "complete" | "failed";
+export type PracticeSession = {
+  id: string; scriptId: string; scriptTitle: string; mode: RehearsalMode; durationSeconds: number; targetSeconds: number;
+  estimatedWpm: number; spokenWpm?: number; completionPercent: number; accuracyPercent?: number; confidence: number;
+  sectionsCompleted: number; totalSections: number; completedAt: string; audioUri?: string; analysisStatus?: AnalysisStatus;
+  analysisError?: string; transcript?: string; correctWords?: number; missingWords?: number; additionalWords?: number;
+  substitutions?: number; alignments?: WordAlignment[]; fillers?: FillerOccurrence[]; fillerCount?: number; pauseCount?: number;
+  hesitationSeconds?: number; longestPauseSeconds?: number; sectionResults?: SectionResult[];
+};
+export type AppSettings = { theme: ThemeName; reduceMotion: boolean; focusMode: boolean; fillerWords: string[] };
+export type AppState = { scripts: ScriptDocument[]; sessions: PracticeSession[]; settings: AppSettings };
+export type ThemePalette = { background: string; backgroundEnd: string; surface: string; surfaceAlt: string; text: string; muted: string; border: string; primary: string; accent: string; success: string; warning: string; danger: string };

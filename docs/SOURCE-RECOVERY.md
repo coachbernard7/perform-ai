@@ -1,0 +1,15 @@
+# Current source collection
+
+**Resolved 1 November 2026:** the user supplied the source, compiled release and complete delivery archives. Their embedded checksums match, and the application is restored under application/. Do not request the source ZIP again. The new Macgyver review is documented in MACGYVER-UPDATE-REVIEW.md. The collection steps below are historical; later ACTOR-MODE-DEV changes were not included in the supplied release baseline.
+
+The user supplied directory listings from L:\alpha-omega-core\perform-ai on their Windows desktop. SOURCE and ACTOR-MODE-DEV both contain application code, package.json and pnpm-lock.yaml. ACTOR-MODE-DEV additionally contains actor-mode and voice-related work, dependencies and local runtime directories. It is the candidate for initial source review, not yet a verified replacement for the hosted React/Vite preview.
+
+scripts/Create-PerformSourceBundle.ps1 creates a source-review ZIP on the Windows desktop without modifying or running the application. It includes selected application directories and supported root source/configuration files. It excludes local/private/generated directories, environment and credential filenames, known credential formats, links, unsupported file types and files over 5 MB. SOURCE-EXPORT-OMISSIONS.txt records skipped paths without their contents. This screening is not a guarantee that every secret or personal record has been identified; the user should review the ZIP before sharing it.
+
+The output contains only the selected ACTOR-MODE-DEV source, not sibling BACKUPS, perform-ai-private, spr-private or SPEECH REHEARSER USERS.txt. The original folders stay untouched. The ZIP is for chat review, not for upload into public_html.
+
+The helper passed a real PowerShell 7.5.4 execution test on synthetic Linux fixtures: source inclusion, private/dependency exclusions, credential omission, symlink rejection, large-file reporting, ZIP integrity and preservation of original files. It uses Windows PowerShell-compatible APIs, but actual execution on the user's Windows desktop remains to be confirmed. Tests are in tests/test-source-export.py and accept PERFORM_PWSH to select the runtime.
+
+After upload, inspect package metadata, instructions, app navigation, existing AI/voice interfaces and authentication before integrating the existing Macgyver component. Confirm the source matches the intended product/version. Preserve the current hosted preview, private configuration and per-user memory. Existing Macgyver source still needs identifying; do not claim it has been integrated or substitute another assistant without agreement.
+
+The subsequently supplied perform_ai_hostgator_release.zip has now been statically inspected. It contains the Expo production export and PHP sidecars, but no editable TypeScript application source. Its own documentation names the companion perform_ai_source.zip, already present in the user's parent directory. Requesting that existing ZIP directly avoids further helper/download steps. See HOSTGATOR-RELEASE-REVIEW.md for the findings, including the embedded development transcription URL and root /app/ routing assumptions.

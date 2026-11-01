@@ -1,0 +1,146 @@
+[
+  {
+    "file": "README.md",
+    "status": "changed"
+  },
+  {
+    "file": "FINAL-TEST-REPORT.md",
+    "status": "changed"
+  },
+  {
+    "file": "FEATURE-COMPLETION.md",
+    "status": "changed"
+  },
+  {
+    "file": "FINAL-DELIVERY-MANIFEST.md",
+    "status": "changed"
+  },
+  {
+    "file": "app.config.ts",
+    "status": "changed"
+  },
+  {
+    "file": "app/_layout.tsx",
+    "status": "changed"
+  },
+  {
+    "file": "app/rehearse.tsx",
+    "status": "changed"
+  },
+  {
+    "file": "tests/environment-override.test.ts",
+    "status": "added"
+  },
+  {
+    "file": "tests/auth.logout.test.ts",
+    "status": "changed"
+  },
+  {
+    "file": "tests/service-worker.test.ts",
+    "status": "changed"
+  },
+  {
+    "file": "tests/account-storage.test.ts",
+    "status": "added"
+  },
+  {
+    "file": "scripts/load-env.js",
+    "status": "changed"
+  },
+  {
+    "file": "scripts/test_macgyver_built.py",
+    "status": "added"
+  },
+  {
+    "file": "scripts/build_macgyver_review.sh",
+    "status": "added"
+  },
+  {
+    "file": "scripts/test_macgyver_php.py",
+    "status": "added"
+  },
+  {
+    "file": "scripts/inject_perform_ai_web_shell.mjs",
+    "status": "changed"
+  },
+  {
+    "file": "scripts/test_macgyver_browser.cjs",
+    "status": "added"
+  },
+  {
+    "file": "scripts/test_macgyver_built.cjs",
+    "status": "added"
+  },
+  {
+    "file": "scripts/prepare_macgyver_review.py",
+    "status": "added"
+  },
+  {
+    "file": "components/macgyver-bridge.tsx",
+    "status": "added"
+  },
+  {
+    "file": "hostgator/service-worker.js",
+    "status": "changed"
+  },
+  {
+    "file": "hostgator/account-auth.php",
+    "status": "changed"
+  },
+  {
+    "file": "hostgator/transcription-provider.php",
+    "status": "added"
+  },
+  {
+    "file": "hostgator/macgyver.php",
+    "status": "added"
+  },
+  {
+    "file": "hostgator/assistant-store.php",
+    "status": "added"
+  },
+  {
+    "file": "hostgator/transcribe.php",
+    "status": "added"
+  },
+  {
+    "file": "hostgator/.htaccess",
+    "status": "changed"
+  },
+  {
+    "file": "hostgator/macgyver-provider.php",
+    "status": "added"
+  },
+  {
+    "file": "lib/hosting.ts",
+    "status": "added"
+  },
+  {
+    "file": "lib/account-storage.ts",
+    "status": "added"
+  },
+  {
+    "file": "lib/app-store.tsx",
+    "status": "changed"
+  },
+  {
+    "file": "lib/php-transcription.ts",
+    "status": "added"
+  },
+  {
+    "file": "lib/document-import.web.ts",
+    "status": "changed"
+  },
+  {
+    "file": "lib/perform-auth.tsx",
+    "status": "changed"
+  },
+  {
+    "file": "public/macgyver-widget.js",
+    "status": "added"
+  },
+  {
+    "file": "server/import/extract.ts",
+    "status": "changed"
+  }
+]

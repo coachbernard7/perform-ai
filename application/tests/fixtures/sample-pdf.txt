@@ -1,0 +1,3 @@
+Hello rehearsal PDF
+
+This is a text-layer document for Speech Rehearser import verification.

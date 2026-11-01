@@ -1,0 +1,10 @@
+releases/
+review-backups/
+application/node_modules/
+application/review-build/
+application/release/
+application/.expo/
+application/.manus/
+application/.env*
+*.log
+__pycache__/

@@ -1,0 +1,30 @@
+{
+  "viewport": [
+    390,
+    844
+  ],
+  "columnCount": 13,
+  "sampledColumns": 8,
+  "changedSampledColumns": 8,
+  "framesDiffer": true,
+  "beforeTransforms": [
+    "matrix(1, 0, 0, 1, 0, -540)",
+    "matrix(1, 0, 0, 1, 0, -540)",
+    "matrix(1, 0, 0, 1, 0, -540)",
+    "matrix(1, 0, 0, 1, 0, -540)",
+    "matrix(1, 0, 0, 1, 0, -540)",
+    "matrix(1, 0, 0, 1, 0, -540)",
+    "matrix(1, 0, 0, 1, 0, -540)",
+    "matrix(1, 0, 0, 1, 0, -540)"
+  ],
+  "afterTransforms": [
+    "matrix(1, 0, 0, 1, 0, -26.5363)",
+    "matrix(1, 0, 0, 1, 0, 105.114)",
+    "matrix(1, 0, 0, 1, 0, -71.2577)",
+    "matrix(1, 0, 0, 1, 0, -3.08025)",
+    "matrix(1, 0, 0, 1, 0, 16.6478)",
+    "matrix(1, 0, 0, 1, 0, 345.541)",
+    "matrix(1, 0, 0, 1, 0, -346.673)",
+    "matrix(1, 0, 0, 1, 0, -252.995)"
+  ]
+}
